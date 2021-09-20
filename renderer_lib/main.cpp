@@ -24,8 +24,7 @@ bool bol::renderer::test::draw(bol::renderer::test::data_type data) {
     sf::RectangleShape rectangleShape({5, 5});
     window.pollEvent(event);
     while (window.pollEvent(event)) {
-//        std::cout << event.type << '\n';
-        // "close requested" event: we close the window
+
         if (event.type == sf::Event::Closed)
             window.close();
         if(event.type == sf::Event::Resized){
@@ -44,9 +43,6 @@ bool bol::renderer::test::draw(bol::renderer::test::data_type data) {
         }
         rectangleShape.setPosition(
                 {rectangleShape.getPosition().x + 5, 0});
-//            std::cout << static_cast<bool>(element) << ' ';
-
-//        std::cout << '\n';
     }
     window.display();
     return window.isOpen();

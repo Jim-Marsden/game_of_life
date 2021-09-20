@@ -13,7 +13,6 @@
 int main(){
 
     srand(time(nullptr));
-    std::cout << "hello, you!\n";
     bol::renderer::test::data_type data {};
     data.reserve(150);
     data.resize(150);
